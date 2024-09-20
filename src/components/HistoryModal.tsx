@@ -14,8 +14,8 @@ export const HistoryModal: React.FC<{ isOpen: boolean; onClose: () => void }> = 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
       <div className="bg-white p-6 rounded-lg max-w-md w-full">
-        <h2 className="text-xl font-bold mb-4">Search History</h2>
-        <ul className="mb-4">
+        <h2 className="text-xl font-bold mb-4 text-black">Search History</h2>
+        <ul className="mb-4 text-black">
           {history.map((entry, index) => (
             <li key={index} className="mb-2">
               <span className="font-semibold">{entry.word}</span> - {formatDate(entry.timestamp)}
